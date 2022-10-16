@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <p></p>
+    <center>
+        <img src="/static/images/kpk.png" alt="kpk" width="500px">
+    </center>
+
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p>
+    <h6 >Definisi 2.4</h6>
+    <p style="font-family: 'times new roman'">Misalkan a dan b adalah bilangan-bilangan bulat. Bilangan bulat m adalah kelipatan persekutuan dari a dan b jika dan hanya jika a|m dan b|m</p>
+    <p style="font-family: 'times new roman'">Nol (0) adalah suatu kelipatan persekutuan dari sebarang bilangan-bilangan bulat a dan b. Bilangan bilangan bulat ab dan -ab masing masing juga merupakan suatu kelipatan persekutuan dan a dan b. Jadi himpunan semua kelipatan persekutuan bulat positif dari a dan b tidak pernah sama dengan himpunan kosong.</p>
+    <p style="font-family: 'times new roman'">Himpunan semua kelipatan dari 6 adalah (6, 12, 18, 24, ..). Himpunan semua kelipatan dari -9 adalah (9, 18, 27, 36, ..). Jadi himpunan semua kelipatan persekutuan dari 6 dan -9 adalah (18, 36, 54, 72, ..). Sehingga kelipatan persekutuan terkecil dari dan -9 adalah 18.</p>
+    <p style="font-family: 'times new roman'"> Ingat bahwa dalam himpunan bagian dari himpunan bilangan bilangan bulat positif selalu mempunyai anggota terkecil. Sehingga KPK dari setiap dua bilangan bulat selalu ada.</p>
+    <center>
+        <h3 style="background-color:rgb(74, 231, 255);">LATIHAN</h3>
+    </center>
+
+    <p style="font-family: 'times new roman'">
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+    
+{% endblock %}

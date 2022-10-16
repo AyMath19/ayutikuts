@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <p></p>
+    <center><img src="/static/images/fpb.png" alt="fpb" width="500px"></center>
+    <p></p>
+    
+    <p style="font-family: 'times new roman'">Faktor bulat positif dari 30 adalah 1, 2, 3, 5, 10, 15, dan 30. Sedangkan semua faktor bulat positif dari 45 adalah 1, 3, 5, 9, 15 dan 45. Maka faktor-faktor persekutuan (pembegai-pembagi bersama) dari 30 dan 45 adalah 1, 3, 5 dan 15. Sehingga faktor persekutuan terbesar dari 30 dan 45 adaah 15. </p>
+    <p style="font-family: 'times new roman'">Secara umum, pengertian tentang faktor persekutuan dari dua bilangan bulat dituliskan sebagai definisi berikut ini.</p>
+    <h6 >Definisi 2.2</h6>
+    <p style="font-family: 'times new roman'">jika a dan b adalah bilangan-bilangan bulat, maka suatu bilangan bulat d disebut faktor persekutuan dari a dan b, apabila d|a dan d|b.</p>
+    <p style="font-family: 'times new roman'">{{ gbrumum }}</p> 
+    <p style="font-family: 'times new roman'">Setiap bilangan bulat, kecuali nol, selalu membagi nol, sehingga jika a = b = 0, maka setiap bilangan bulat merupakan faktor persekutuan dari a dan b. Dalam hal ini, himpunan semua faktor persekutuan bulat positif dari a dan b merupakan himpunan tak hingga.</p>
+    <p style="font-family: 'times new roman'">Apabila sekurang-kurangnya satu dari a dan b tidak sama dengan nol, maka himpunan semua faktor persekutuan bulat positif dari a dan b merupakan himpunan berhingga. Sehingga mesti ada anggota dari himpunan tersebut yang terbesar dan disebut faktor persekutuan terbesar (FPB) dari a dan b.</p> 
+    
+    <center>
+        <h4 style="background-color: rgb(74, 231, 255) ;">LATIHAN</h4>
+    </center>
+    <p>
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
